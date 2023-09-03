@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Yummy</title>
+    <!-- Favicon -->
+
+<link rel="icon" type="image/x-icon" href="./images/logo.ico">
+    <!-- link Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- link Fontawsoe -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- link stylesheet -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body class="bg-black overflow-hidden">
+<div class="loaderParent ">
+        <span class="loader  "></span>
+    </div> -->
+<aside class=" position-fixed d-flex "> 
+        <div class="inner bg-black text-white p-2 d-flex flex-column justify-content-between align-items-start p-3">
+         <ul class="list-unstyled ulParent">
+            <li class="search">search
+              </li>
+            <li class="categories">Categories
+              </li>
+            <li class="Area"> Area
+              </li>
+            <li class="ingredients">Ingredients
+              </li>
+            <li class="contact">Contact Us
+              </li>
+         </ul>
+
+         <div class="decription">
+            <i class="fa-solid fa-globe"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <p>Copyright Â© 2019 All Rights <br>
+                Reserved.</p>
+         </div>
+        </div>
+        <div class="white d-flex justify-content-between align-items-center flex-column bg-white vh-100 py-2 ">
+         <img src="./images/logo.png" alt="" class="logo ">
+         <i class="fa-solid fa-bars h2 "></i>
+         <i class="fa-solid fa-x h2 d-none"></i>
+         <span class="d-flex flex-column justify-content-center align-items-center">
+             
+            <i class="fa-solid fa-globe"></i>
+             <i class="fa-solid fa-share-nodes"></i>
+
+         </span>
+        </div>
+     </aside>
+    <div class="container ">
+          
+        <div class="row  py-3" id="row">
+      
+        </div>
+        <div class="  py-3 searchPanel d-none">
+            <div class="col-md-6  ">
+                <input type="text" class="form-control sName" placeholder='search by name'>
+               </div>
+               <div class="col-md-6 ">
+                <input type="text" class="form-control fletter" placeholder='search by first letter' maxlength="1">
+             
+               </div>
+        </div>
+        <div class=" row  py-3 form d-none justify-content-center align-items-center  vh-100">
+          <div class="row">
+              <div class="col-md-6  py-1  ">
+                  <input type="text" class="form-control " placeholder='enter your name' onkeyup="validateName(this.value)">
+                  <p class="regexplace1 bg-danger p-2 my-2 rounded-2 d-none"></p>
+               </div>
+               <div class="col-md-6 py-1 ">
+                <input type="email" class="form-control " placeholder='enter your email' onkeyup="validateEmail(this.value)">
+                <p class="regexplace2 bg-danger p-2 my-2 rounded-2 d-none"></p>
+               </div>
+            <div class="col-md-6  py-1  ">
+                <input type="text" class="form-control " placeholder='enter your phone' onchange="validatephone(this.value)">
+                <p class="regexplace3 bg-danger p-2 my-2 rounded-2 d-none"></p>
+               </div>
+               <div class="col-md-6   py-1 ">
+                <input type="number" class="form-control " placeholder='enter your age'>
+             
+               </div>
+                <div class="col-md-6  py-1   ">
+                    <input type="password" class="form-control passwordinp" placeholder='enter your password' onchange="checkpass(this.value)">
+                    <p class="regexplace4 bg-danger p-2 my-2 rounded-2 d-none"></p>
+                </div>
+                <div class="col-md-6  py-1 ">
+                    <input type="password" class="form-control repasswordinp " placeholder='renter your password' onchange="checkduplication(this.value)">
+                    <p class="regexplace5 bg-danger p-2 my-2 rounded-2 d-none"></p>
+                
+                </div>
+                <button class="btn btn-outline-danger disabled submit my-2 ">submit</button>
+          </div>
+        </div>
+     </div>
+       
+      
+
+
+    
+
+    <!-- bootstrap js file  -->
+    <script src="./js/bootstrap.bundle.js"></script>
+     <!-- jq file   -->
+     <script src="./js/code.jquery.com_jquery-3.7.1.min.js"></script>
+     <!-- main js file -->
+      <script src="./js/main.js"></script>
+
+</body>
+</html>
